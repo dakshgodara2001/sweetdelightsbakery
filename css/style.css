@@ -1,0 +1,108 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Homepage styles */
+  .products {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .products article {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 1rem;
+  }
+  
+  .reviews {
+    margin-top: 2rem;
+  }
+  
+  .reviews blockquote {
+    background-color: #f5f5f5;
+    border-left: 4px solid #333;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  .reviews cite {
+    display: block;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 0.5rem;
+    text-align: right;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form label {
+    margin-top: 1rem;
+  }
+  
+  form input,
+  form textarea {
+    margin-top: 0.5rem;
+    resize: none;
+    width: 100%;
+  }
+  
+  form button {
+    background-color: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    width: fit-content;
+  }
+  
+  form button:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    header {
+      text-align: center;
+    }
+  
+    main {
+      padding: 1rem;
+    }
+  }
+  
